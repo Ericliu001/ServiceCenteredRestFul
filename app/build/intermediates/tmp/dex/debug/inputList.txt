@@ -1,0 +1,1 @@
+/Users/liu/StudioProjects/restfulCachingProviderContacts/app/build/intermediates/classes/debug
