@@ -44,6 +44,8 @@ public class ContactDetailActivity extends BaseActivity
             this.vals = vals;
         }
 
+
+        // UpdateContact posts the new values to the content provider.
         @Override
         protected Void doInBackground(Uri... args) {
             Uri uri = args[0];
