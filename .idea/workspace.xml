@@ -24,15 +24,15 @@
       <file leaf-file-name="RESTService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/svc/RESTService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.7662888">
-              <caret line="304" column="19" selection-start-line="304" selection-start-column="19" selection-end-line="304" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.38526914">
+              <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
               <folding>
-                <element signature="e#5150#5178#0" expanded="true" />
-                <element signature="e#5199#5230#0" expanded="true" />
-                <element signature="e#6960#7593#0" expanded="true" />
-                <element signature="e#7592#7593#0" expanded="true" />
-                <element signature="e#8381#8655#0" expanded="true" />
-                <element signature="e#8654#8655#0" expanded="true" />
+                <element signature="e#5143#5171#0" expanded="true" />
+                <element signature="e#5192#5223#0" expanded="true" />
+                <element signature="e#6953#7586#0" expanded="true" />
+                <element signature="e#7585#7586#0" expanded="true" />
+                <element signature="e#8374#8648#0" expanded="true" />
+                <element signature="e#8647#8648#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1455,15 +1455,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/svc/RESTService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.7662888">
-          <caret line="304" column="19" selection-start-line="304" selection-start-column="19" selection-end-line="304" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.38526914">
+          <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
           <folding>
-            <element signature="e#5150#5178#0" expanded="true" />
-            <element signature="e#5199#5230#0" expanded="true" />
-            <element signature="e#6960#7593#0" expanded="true" />
-            <element signature="e#7592#7593#0" expanded="true" />
-            <element signature="e#8381#8655#0" expanded="true" />
-            <element signature="e#8654#8655#0" expanded="true" />
+            <element signature="e#5143#5171#0" expanded="true" />
+            <element signature="e#5192#5223#0" expanded="true" />
+            <element signature="e#6953#7586#0" expanded="true" />
+            <element signature="e#7585#7586#0" expanded="true" />
+            <element signature="e#8374#8648#0" expanded="true" />
+            <element signature="e#8647#8648#0" expanded="true" />
           </folding>
         </state>
       </provider>

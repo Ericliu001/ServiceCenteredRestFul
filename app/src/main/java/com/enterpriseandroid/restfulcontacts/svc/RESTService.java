@@ -30,7 +30,7 @@ public class RESTService extends IntentService {
     private static final String TAG = "REST";
 
     // odd that these aren't defined elsewhere...
-    public static enum HttpMethod { GET, PUT, POST, DELETE; }
+    public enum HttpMethod { GET, PUT, POST, DELETE; }
     public static final String HEADER_ENCODING = "Accept-Encoding";
     public static final String HEADER_USER_AGENT = "User-Agent";
     public static final String HEADER_CONTENT_TYPE = "Content-Type";
