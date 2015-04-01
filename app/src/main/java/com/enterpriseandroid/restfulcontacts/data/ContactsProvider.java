@@ -139,6 +139,7 @@ public class ContactsProvider extends ContentProvider {
         vals.put(ContactsHelper.COL_DIRTY, MARK);
 
         //creates a unique transaction ID(xact) and forwards the request to the service component as an intent.
+        // The insert method returns immediately with the transaction ID
         String xact = RESTService.insert(getContext(), vals);
         vals.put(ContactsHelper.COL_SYNC, xact);
 

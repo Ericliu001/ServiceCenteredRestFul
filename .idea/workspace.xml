@@ -21,15 +21,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ContactDetailActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RESTService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/svc/RESTService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="6.7662888">
+              <caret line="304" column="19" selection-start-line="304" selection-start-column="19" selection-end-line="304" selection-end-column="19" />
+              <folding>
+                <element signature="e#5150#5178#0" expanded="true" />
+                <element signature="e#5199#5230#0" expanded="true" />
+                <element signature="e#6960#7593#0" expanded="true" />
+                <element signature="e#7592#7593#0" expanded="true" />
+                <element signature="e#8381#8655#0" expanded="true" />
+                <element signature="e#8654#8655#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/svc/MessageHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactDetailActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/ContactDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47203276">
-              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
               <folding>
-                <element signature="e#4063#4245#0" expanded="true" />
-                <element signature="e#4244#4245#0" expanded="true" />
+                <element signature="e#4301#4483#0" expanded="true" />
+                <element signature="e#4482#4483#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactsProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/data/ContactsProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="140" column="66" selection-start-line="140" selection-start-column="66" selection-end-line="140" selection-end-column="66" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -741,6 +778,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/ContactDetailActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/data/ContactsProvider.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/svc/MessageHandler.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/svc/RESTService.java" />
       </list>
     </option>
   </component>
@@ -1370,22 +1410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/data/ContactsProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44065484">
-          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/svc/RESTService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/data/ContactsHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1404,11 +1428,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/ContactDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47203276">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
           <folding>
-            <element signature="e#4063#4245#0" expanded="true" />
-            <element signature="e#4244#4245#0" expanded="true" />
+            <element signature="e#4301#4483#0" expanded="true" />
+            <element signature="e#4482#4483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/data/ContactsProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="140" column="66" selection-start-line="140" selection-start-column="66" selection-end-line="140" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/svc/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/enterpriseandroid/restfulcontacts/svc/RESTService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.7662888">
+          <caret line="304" column="19" selection-start-line="304" selection-start-column="19" selection-end-line="304" selection-end-column="19" />
+          <folding>
+            <element signature="e#5150#5178#0" expanded="true" />
+            <element signature="e#5199#5230#0" expanded="true" />
+            <element signature="e#6960#7593#0" expanded="true" />
+            <element signature="e#7592#7593#0" expanded="true" />
+            <element signature="e#8381#8655#0" expanded="true" />
+            <element signature="e#8654#8655#0" expanded="true" />
           </folding>
         </state>
       </provider>

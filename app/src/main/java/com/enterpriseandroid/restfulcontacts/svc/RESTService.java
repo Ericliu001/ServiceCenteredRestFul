@@ -1,5 +1,20 @@
 package com.enterpriseandroid.restfulcontacts.svc;
 
+import android.app.IntentService;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.util.Log;
+
+import com.enterpriseandroid.restfulcontacts.BuildConfig;
+import com.enterpriseandroid.restfulcontacts.ContactsApplication;
+import com.enterpriseandroid.restfulcontacts.R;
+import com.enterpriseandroid.restfulcontacts.data.ContactsContract;
+import com.enterpriseandroid.restfulcontacts.data.ContactsHelper;
+import com.enterpriseandroid.restfulcontacts.data.ContactsProvider;
+
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,20 +24,6 @@ import java.io.Writer;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.UUID;
-
-import android.app.IntentService;
-import android.content.ContentValues;
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.util.Log;
-import com.enterpriseandroid.restfulcontacts.BuildConfig;
-import com.enterpriseandroid.restfulcontacts.ContactsApplication;
-import com.enterpriseandroid.restfulcontacts.R;
-import com.enterpriseandroid.restfulcontacts.data.ContactsContract;
-import com.enterpriseandroid.restfulcontacts.data.ContactsHelper;
-import com.enterpriseandroid.restfulcontacts.data.ContactsProvider;
 
 
 public class RESTService extends IntentService {
@@ -63,6 +64,11 @@ public class RESTService extends IntentService {
 
     private static final String OP = "RESTService.OP";
 
+
+    // To do this, the code first calls the insert method.
+    // In this implementation, insert is the embodiment of
+    // the service helper architectural component. It creates a
+    // unique transaction ID and forwards the request to the service component as an intent.
 
     public static String insert(Context ctxt, ContentValues vals) {
         Intent intent = getIntent(ctxt, RESTService.Op.CREATE);
@@ -154,6 +160,11 @@ public class RESTService extends IntentService {
         sendRequest(args);
     }
 
+
+    // The application’s intent service will eventually get around to processing
+    // the request that was posted from the sendInsert method.
+    // Since the service is an intent service, that processing automatically
+    // takes place on a daemon thread. Again, remember that this is not true for subclasses of a standard service.
     private void sendRequest(Bundle args) {
         int op = 0;
         if (args.containsKey(OP)) { op = args.getInt(OP); }
@@ -184,6 +195,8 @@ public class RESTService extends IntentService {
 
         final ContentValues vals = new ContentValues();
         try {
+            // The MessageHandler object marshals the content values object to JSON,
+            // and the resulting message is passed on as the payload for the HTTP request.
             String payload = new MessageHandler().marshal(args);
 
             sendRequest(
@@ -195,6 +208,10 @@ public class RESTService extends IntentService {
                     public void handleResponse(BufferedReader in)
                         throws IOException
                     {
+                        // When the server returns its response, the contents are passed
+                        // to the response handler. It simply unmarshals that content into another new,
+                        // content values object. If the request is successful, the new contact has
+                        // been synchronized and no longer dirty.
                         new MessageHandler().unmarshal(in, vals);
                     } });
 
@@ -269,6 +286,14 @@ public class RESTService extends IntentService {
             new String[] { args.getString(XACT) });
     }
 
+
+    // The cleanup method calls the content provider to update the record on
+    // which the transaction is outstanding. The implementation is a little
+    // flabby here; it uses the ID of the transaction to identify the record
+    // requiring update. This requires exposing columns in the provider contract
+    // that really should be private. A more complete application might describe
+    // a second virtual table to be used only by the service and in which the transaction
+    // ID was the primary key.
     private void cleanup(Bundle args, ContentValues vals) {
         if (null == vals) { vals = new ContentValues(); }
 

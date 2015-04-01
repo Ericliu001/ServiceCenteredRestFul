@@ -46,6 +46,9 @@ public class ContactDetailActivity extends BaseActivity
 
 
         // UpdateContact posts the new values to the content provider.
+        // When the user is creating a new contact, the URI used to name
+        // the contact whose information should be edited is null. The task
+        // can determine whether an insert or an update is required by checking the URI.
         @Override
         protected Void doInBackground(Uri... args) {
             Uri uri = args[0];

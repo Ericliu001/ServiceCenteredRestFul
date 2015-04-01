@@ -1,20 +1,20 @@
 package com.enterpriseandroid.restfulcontacts.svc;
 
-import java.io.IOException;
-import java.io.Reader;
-import java.util.HashMap;
-import java.util.Map;
-
 import android.content.ContentValues;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.JsonReader;
 import android.util.Log;
 
+import com.enterpriseandroid.restfulcontacts.data.ContactsContract;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.enterpriseandroid.restfulcontacts.data.ContactsContract;
+import java.io.IOException;
+import java.io.Reader;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class MessageHandler {
@@ -77,6 +77,8 @@ public class MessageHandler {
         return payload.toString();
     }
 
+
+    //
     public ContentValues unmarshal(Reader in, ContentValues vals)
         throws IOException
     {
